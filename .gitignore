@@ -13,6 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+.idea/vcs.xml
 
 # Ignore app module
 /app/
