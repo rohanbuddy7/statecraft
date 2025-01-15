@@ -99,7 +99,9 @@ fun CoachMark(
 
         if(isNearbyMiddleHorizontal){
             xOffset = with(density) { (currentItem.circleCenter.x - 300).toDp() }
-            yOffset = with(density) { (currentItem.circleCenter.y + 200).toDp() }
+            if(isTop) {
+                yOffset = with(density) { (currentItem.circleCenter.y + 200).toDp() }
+            }
         }
 
         Column(
