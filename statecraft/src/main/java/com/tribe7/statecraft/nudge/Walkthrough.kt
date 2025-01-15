@@ -56,6 +56,7 @@ fun Walkthrough(
 
         // Chat box dimensions
         val chatBoxWidthPx = with(density) { 200.dp.toPx() }
+        val chatBoxHeightPxTop = with(density) { 50.dp.toPx() }
         val chatBoxHeightPx = with(density) { 200.dp.toPx() }
 
         // Pointer offset (circle center)
@@ -75,11 +76,11 @@ fun Walkthrough(
         when {
             isTop && isLeft -> { // Top-left
                 xOffset = pointerX + with(density) { 50.dp.toPx() }
-                yOffset = pointerY + chatBoxHeightPx //+ with(density) { -50.dp.toPx() }
+                yOffset = pointerY + chatBoxHeightPxTop //+ with(density) { -50.dp.toPx() }
             }
             isTop && isRight -> { // Top-right
                 xOffset = pointerX - chatBoxWidthPx - with(density) { 50.dp.toPx() }
-                yOffset = pointerY + chatBoxHeightPx //+ with(density) { 50.dp.toPx() }
+                yOffset = pointerY + chatBoxHeightPxTop //+ with(density) { 50.dp.toPx() }
             }
             isBottom && isLeft -> { // Bottom-left
                 xOffset = pointerX + with(density) { 50.dp.toPx() }
@@ -98,7 +99,7 @@ fun Walkthrough(
                 yOffset = if (pointerY > screenHeightPx / 2) {
                     pointerY - chatBoxHeightPx - with(density) { 50.dp.toPx() }
                 } else {
-                    pointerY + chatBoxHeightPx + with(density) { 50.dp.toPx() }
+                    pointerY + chatBoxHeightPxTop + with(density) { 50.dp.toPx() }
                 }
             }
         }
@@ -123,9 +124,10 @@ fun Walkthrough(
                 else -> pointerX // inside the box horizontally
             }
 
+            val arrowHeight = 200
             val closestY = when {
                 pointerY < chatBoxTop -> chatBoxTop // above the box
-                pointerY > chatBoxBottom -> chatBoxBottom - 100 // below the box
+                pointerY > chatBoxBottom -> chatBoxBottom - arrowHeight // below the box
                 else -> pointerY // inside the box vertically
             }
 
