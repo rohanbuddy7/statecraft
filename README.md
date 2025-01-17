@@ -124,6 +124,12 @@ dependencies {
 }
 ```
 
+and add the following to `settings.gradle` in the repositories section:
+
+```gradle
+maven { setUrl("https://jitpack.io") }
+```
+
 ---
 
 ## License
