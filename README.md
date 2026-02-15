@@ -2,10 +2,15 @@
 
 Reusable **Jetpack Compose UI components** for Android applications.
 
+### Preview
 
-Screenshots :
-[Statecraft Screenshots](https://github.com/rohanbuddy7/docs/tree/main/statecraft)
+<img width="220" alt="CoachMark 1" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-coachmark-1.png" /> <img width="220" alt="Input" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-input.png" /> <img width="220" alt="Empty" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-empty.png" />
 
+<img width="220" alt="Walkthrough 1" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-walkthrough-1.png" /> <img width="220" alt="Walkthrough 2" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-walkthrough-2.png" /> <img width="220" alt="CoachMark 2" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-coachmark-2.png" />
+
+<img width="220" alt="CoachMark 3" src="https://raw.githubusercontent.com/rohanbuddy7/docs/main/statecraft/statecraft-coachmark-3.png" />
+
+---
 
 ## InputField Component
 
